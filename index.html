@@ -1,28 +1,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald" />
     <meta name="author" content="SitePoint" />
-
     <link rel="stylesheet" href="/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <h1>Clipper CLick</h1>
-
-    <div class="cutout">
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
-      <img />
+    <div class="row">
+      <div class="column">
+        <h1>Clipper CLick</h1>
+        <div class="user_choice">
+          <button>
+            <label for="avatar">Canvas Image</label>
+            <input
+              type="file"
+              id="avatar"
+              name="avatar"
+              accept="image/png, image/jpeg"
+              style="display: none;"
+            />
+          </button>
+          <!-- <label for="color">Canvas Background Color</label> -->
+          <!-- <select id="color">
+                <option value="#363062">Choose color</option>
+                <option value="#4d4c7d">Volvo</option>
+                <option value="#827397">Saab</option>
+                <option value="d8b9c3">Mercedes</option>
+                </select> -->
+          <!-- <p>Choose an Image and Click on Canvas to Choose cutout</p> -->
+        </div>
+        <p>
+          Choose an Image and click <br />
+          on Canvas to Choose cutout
+        </p>
+      </div>
+      <div class="column">
+        <div class="cutout">
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+          <img />
+        </div>
+      </div>
     </div>
     <script src="/logic.js"></script>
   </body>
